@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Piazzolla:opsz,wght@8..30,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  font-family: "Piazzolla", "serif";
+}
+:root {
+  --main-bg: #1e272e;
+  --main-color: #0097e6;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  height: 100vh;
+  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+}
+.row {
+  margin: 0;
+}
+
+.main_menu {
+  background-color: var(--main-bg);
+}
+.navbar {
+  color: #fff;
+  background-color: var(--main-bg);
+  padding: 1.5rem 0;
+}
+.navbar li {
+  margin-left: 0rem;
+  padding-right: 3rem;
+}
+
+.navbar a {
+  color: #fff;
+  font-size: 18px;
+}
+.navbar-toggler {
+  background-color: rgb(81, 43, 43);
+}
+@media (min-width: 980px) {
+  .navbar-nav {
+    margin-left: 66%;
+  }
+}
+.fa-snowflake {
+  transition: all linear;
+  animation: rota 1s linear infinite;
+  color: var(--main-color);
+}
+
+@keyframes rota {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.main_header_left {
+  height: 50rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.main_header_left p {
+  font-size: 2rem;
+}
+.main_header_left h1 {
+  font-size: 3rem;
+  margin: 1rem 0 2rem 0;
+  text-transform: capitalize;
+}
+.main_header_left .txt_clr {
+  color: var(--main-color);
+}
+.main_header_left button {
+  border: none;
+  padding: 0.7rem 1.2rem;
+  font-size: 1.4rem;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  box-shadow: 0 8px 6px -6px #1e272e;
+}
+.main_header_left button:hover {
+  box-shadow: 0 8px 6px -6px var(--main-color);
+}
+
+.main_header_right {
+  height: 50rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.main_header_right img {
+  /* filter: drop-shadow(0 0.5rem 1rem rgba(0, 0, 0, 0.3)); */
+  /* filter: drop-shadow(0.6rem 0.6rem 1rem rgba(20, 20, 180, 0.8)); */
+  height: 400px;
+  margin-left: 5rem;
+  /* display: flex;
+    justify-content: center; */
+}
+.errimg img {
+  height: 34rem;
+  width: 40rem;
+}
+footer {
+  width: 100%;
+  background-color: var(--main-bg);
+  margin-top: auto;
+}
+footer p {
+  margin: 0;
+  text-align: center;
+  color: #fff;
+  line-height: 3.5rem;
+  font-size: 1.5rem;
+}
+@media (max-width: 768px) {
+  .main_header_left {
+    height: auto;
+    margin: 5rem 0;
+  }
+  .main_header_right {
+    height: auto;
+    margin-top: 5rem 0;
+  }
+  .text_form {
+    width: auto;
+  }
+  .tempinfo {
+    width: auto;
+  }
+  .main_layer .middle_layer p,
+  .main_layer .middle_layer .fa {
+    font-size: 4rem;
+    font-weight: 700;
+  }
+}
+
+/* temp information */
+.tempinfo {
+  width: 40rem;
+  margin: auto;
+  background-color: #323544;
+  border-radius: 1rem;
+  padding: 1rem;
+  font-family: "Roboto", sans-serif;
+}
+.top_layer {
+  width: 100%;
+  height: 20%;
+  background-color: #2d303d;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 1rem;
+}
+.top_layer p {
+  color: #fff;
+  font-weight: 300px;
+  padding: 2rem;
+  font-size: 1.3rem;
+}
+.main_layer {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main_layer #city_name {
+  padding: 2rem 0;
+  color: #bfc1c8;
+  font-weight: 200;
+  font-size: 1.5rem;
+}
+.main_layer .middle_layer {
+  display: flex;
+  justify-content: space-around;
+  color: #fff;
+}
+.main_layer .middle_layer p,
+.main_layer .middle_layer .fa {
+  font-size: 7rem;
+  font-weight: 900;
+}
+.fa {
+  color: #0097e6;
+}
+sup {
+  font-size: 6rem;
+  margin-top: -2rem;
+}
+/* .data_hide{
+    /* visibility: hidden; */
+/* transition: all 0.3s linear; 
+} */
+.text_form {
+  width: 60%;
+  height: 25%;
+  position: relative;
+  margin: 3rem auto 2rem;
+}
+.text_form input[type="text"] {
+  width: 100%;
+  padding: 2rem 5rem 2rem 2rem;
+  background: #1e202b;
+  color: #fff;
+  outline: none;
+  font-size: 1.7rem;
+  border-radius: 3rem;
+}
+
+::placeholder {
+  color: #fff;
+}
+
+.text_form input[type="submit"] {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  bottom: 5px;
+  border: none;
+  background: #0097e6;
+  padding: 0 3rem;
+  border-radius: 3rem;
+  color: #fff;
+  font-size: 1.6rem;
+}
+.text_form input[type="submit"]:hover {
+  color: #0097e6;
+  background: #fff;
+}

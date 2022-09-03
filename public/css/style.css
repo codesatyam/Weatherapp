@@ -50,8 +50,11 @@ body {
 }
 .fa-snowflake {
   transition: all linear;
-  animation: rota 1s linear infinite;
+  animation: rota 2s linear infinite;
   color: var(--main-color);
+}
+.mr{
+  padding-bottom: 10px;
 }
 
 @keyframes rota {
